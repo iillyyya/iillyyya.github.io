@@ -107,6 +107,126 @@ p {
 .language-switcher a:hover {
   color: #fff;
 }
+/*mobile header*/
+/* --- MOBILE HEADER --- */
+.mobile-header {
+  display: flex;
+  align-items: center;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 5rem;
+  background-color: #030303;
+  color: #dfdfdf;
+  z-index: 1000;
+  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
+  padding: 0;
+}
+
+/* Center the logo absolutely */
+.mobile-header .logo-link {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  transform: translate(-50%, -50%);
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 0;
+  padding: 0;
+  width: auto;
+}
+
+/* Logo size for mobile */
+.mobile-header .logo {
+  max-height: 3.5rem;
+  width: auto;
+  display: block;
+  margin: 0;
+  padding: 0;
+}
+
+/* Hamburger menu on the left */
+.menu-toggle {
+  font-size: 1.5rem;
+  background: none;
+  border: none;
+  color: #dfdfdf;
+  cursor: pointer;
+  position: absolute;
+  left: 1rem;
+  top: 50%;
+  transform: translateY(-50%);
+  z-index: 1001;
+}
+
+/* Hide the checkbox */
+.menu-checkbox {
+  display: none;
+}
+
+/* Mobile Nav (Hidden by Default) */
+.mobile-nav {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: rgba(3, 3, 3, 0.9);
+  z-index: 999;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  transform: translateY(-100%);
+  transition: transform 0.6s ease-in-out;
+}
+
+/* Show the Mobile Nav when Checkbox is Checked */
+.menu-checkbox:checked + .mobile-nav {
+  transform: translateY(0);
+}
+
+/* Mobile Menu Items */
+.mobile-menu {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+  text-align: center;
+}
+
+.mobile-menu li {
+  margin: 1rem 0;
+}
+
+.mobile-menu a {
+  color: #dfdfdf;
+  text-decoration: none;
+  font-size: 1.5rem;
+  font-weight: bold;
+}
+
+.mobile-menu a:hover {
+  color: #fff;
+}
+
+/* Hide Desktop Header on Mobile, Show Mobile Header */
+@media screen and (max-width: 1080px) {
+  .header {
+    display: none;
+  }
+  .mobile-header {
+    display: flex;
+  }
+}
+
+/* Hide Mobile Header on Desktop */
+@media screen and (min-width: 1081px) {
+  .mobile-header {
+    display: none;
+  }
+}
 
 
 /* Hero Section */
@@ -581,53 +701,6 @@ p.menu-list__item-desc + span.dots {
   filter: grayscale(100%) invert(100%);
 }
 /* Mobile Header */
-.mobile-header {
-  display: flex;
-  justify-content: center; /* Center the logo */
-  align-items: center;
-  padding: 1.25rem 0; /* Match desktop header thickness */
-  background-color: #030303;
-  color: #dfdfdf;
-  position: fixed;
-  top: 0;
-  width: 100%;
-  z-index: 1000;
-  box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-  height: 5rem; /* Match desktop header height */
-}
-
-.mobile-header .logo-link {
-  position: absolute;
-  left: 50%; 
-  transform: translateX(-50%); /* Adjust for centering */
-  display: flex;
-  align-items: center;
-  justify-content: center;
-  margin: 0; /* Remove left margin */
-  padding: 0; /* Remove padding */
-  width: auto;
-}
-
-.mobile-header .logo {
-  height: 6rem; /* Adjust logo size */
-  width: auto; /* Maintain aspect ratio */
-  display: block;
-  margin: 0; /* Remove margin */
-  padding: 0; /* Remove padding */
-}
-
-.menu-toggle {
-  font-size: 1.5rem; /* Set the size of the hamburger icon */
-  background: none; /* Remove any default button styling */
-  border: none; /* Remove borders */
-  color: #dfdfdf; /* Set the color of the icon */
-  cursor: pointer; /* Change the cursor to a pointer */
-  position: absolute; /* Position it relative to the header */
-  left: 1rem; /* Move the hamburger icon more to the left */
-  top: 50%; /* Center it vertically */
-  transform: translateY(-50%); /* Adjust for vertical centering */
-  z-index: 1001; /* Ensure it appears above other elements */
-}
 
 /* Hide the checkbox */
 .menu-checkbox {
@@ -679,19 +752,7 @@ p.menu-list__item-desc + span.dots {
   color: #fff;
 }
 
-/* Responsive Styles */
-@media screen and (max-width: 1080px) {
-  /* Hide Desktop Header */
-  .header {
-    display: none;
-  }
 
-  /* Show Mobile Header */
-  .mobile-header {
-    display: flex;
-  }
-}
-/* Responsive Styles */
 @media screen and (max-width: 1080px) {
   /* About Section */
   .about-container {
@@ -756,19 +817,6 @@ p.menu-list__item-desc + span.dots {
     display: none; /* Hide the desktop header */
   }
 
-  .mobile-header {
-    display: flex; /* Show the mobile header */
-    justify-content: space-between;
-    align-items: center;
-    padding: 1rem;
-    background-color: #030303;
-    color: #dfdfdf;
-    position: fixed;
-    top: 0;
-    width: 100%;
-    z-index: 1000;
-    box-shadow: 0 0.25rem 0.25rem rgba(0, 0, 0, 0.25);
-  }
 }
 
 @media screen and (max-width: 1080px) {
@@ -913,15 +961,6 @@ p.menu-list__item-desc + span.dots {
   margin-bottom: auto;
 }
   
-  
-
-
-/* Hide Mobile Header on Desktop */
-@media screen and (min-width: 1081px) {
-  .mobile-header {
-    display: none; /* Hide mobile header on desktop */
-  }
-}
 @media screen and (max-width: 1080px) {
   /* Adjust the hero section for mobile */  
   .section {
