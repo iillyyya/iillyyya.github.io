@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html lang="cs">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOLA BBS | O nás</title>
+    <link rel="stylesheet" href="main.css">
+</head>
+<body>
+<!-- Desktop Header -->
+<header class="header">
+    <a href="index.html" class="logo-link">
+      <img src="images/svg logo text.svg" alt="Logo" class="logo">
+    </a>
+    <nav class="nav">
+      <a href="about.html">O nás</a>
+      <a href="napojovy listek.html">Nápojový lístek</a>
+      <a href="sez menu.html">Sezonní Menu</a>
+      <a href="tydenni menu.html">Týdenní Menu</a>
+      <a href="kontakt.html">Kontakt</a>
+    </nav>
+      <div class="language-switcher">
+        <a href="/index.html">CZ</a> | <a href="english/indexen.html">EN</a>
+      </div>
+
+  </header>
+  <!-- Mobile Header -->
+<header class="mobile-header">
+  <a href="index.html" class="logo-link">
+    <img src="images/logo square.svg" alt="Logo" class="logo">
+  </a>
+  <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+  <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+  <nav class="mobile-nav">
+    <ul class="mobile-menu">
+      <li><a href="about.html">O Nás</a></li>
+      <li><a href="napojovy listek.html">Nápojový lístek</a></li>
+      <li><a href="sez menu.html">Sezonní Menu</a></li>
+      <li><a href="tydenni menu.html">Týdenní Menu</a></li>
+      <li><a href="kontakt.html">Kontakt</a></li>
+      <li><a href="english/indexen.html">English</a></li>
+    </ul>
+  </nav>
+</header>
+<div class="aboutmain-section">
+    <div class="aboutmain-hero">
+      <div class="hero-overlay"></div>
+      <h1>O Nás</h1>
+    </div>
+  
+    <!-- First row -->
+    <div class="aboutmain-row">
+      <div class="aboutmain-image">
+              <img src="images/svickova.jpg" alt="barvchod" size="50%">
+      </div>
+      <div class="aboutmain-text">
+        <p class="aboutmain-subtitle">Behind the scene</p>
+        <h2 class="aboutmain-title">Náš příběh</h2>
+        <p class="aboutmain-description">
+          Naše bistro vzniklo z lásky k dobrému jídlu, příjemné atmosféře a poctivé práci. Věříme, že jídlo má spojovat, dělat radost a zanechávat dojem — a přesně o to se u nás snažíme každý den. Připravujeme pro vás chutné obědy z čerstvých surovin, domácí dezerty pečené s péčí a podáváme výběr osvěžujících limonád, kvalitní kávy i sezonních drinků. Ať už si přijdete na rychlý oběd, sladkou pauzu nebo pohodové posezení s přáteli, u nás najdete místo, kde se budete cítit jako doma.
+        </p>
+      </div>
+    </div>
+  
+
+  <!-- Second row: image right, text left -->
+  <div class="aboutmain-row aboutmain-reverse">
+    <div class="aboutmain-image">
+      <img src="images/standa.jpg" alt="standa">
+    </div>
+    <div class="aboutmain-text">
+      <h2 class="aboutmain-title">Náš šefkuchař</h2>
+      <p class="aboutmain-description">
+        Za chutěmi našeho bistra stojí šéfkuchař Standa, který do každého jídla vkládá nejen roky zkušeností, ale i skutečnou vášeň pro poctivou kuchyni. Věří v jednoduchost, kvalitu surovin a poctivý přístup k vaření — ať už jde o vydatný oběd, nadýchaný dezert nebo domácí limonádu. Jeho cílem je, aby se každý host cítil jako doma a odcházel s pocitem, že zažil něco víc než jen dobré jídlo
+      </p>
+    </div>
+  </div>
+  </div>
+  
+
+
+    <!-- Footer Section -->
+    <footer class="footer">
+        <div class="footer-column">
+            <img src="images/logo w text_.png" alt="Logo">
+            <p>
+                <span>&#x1F4CD; Velehradská 1911/4, 130 00 Vinohrady</span><br>
+                <span>&#x260E; +420 773 127 383</span><br>
+                <span>&#128712; Provozavatel: NOLA BBS s.r.o<br>
+                IČO 21267448<br>
+                zodpovědná osoba: Stanislav Nováček</span>
+            </p>
+        </div>
+        <div class="footer-column">
+            <h3>Stránky</h3>
+            <a href="index.html">Domů</a>
+            <a href="napojovy listek.html">Nápojový lístek</a>
+            <a href="sez menu.html">Sezonní menu</a>
+            <a href="tydenni menu.html">Týdenní menu</a>
+            <a href="kontakt.html">Kontakt</a>
+        </div>
+        <div class="footer-column">
+            <h3>Otevírací doba</h3>
+            <p>Pondělí: Zavřeno</p>
+            <p>Úterý - Neděle: 12:00 - 23:00</p>
+        </div>
+        <div class="footer-column">
+            <h3>Sociální sítě</h3>
+            <a href="https://www.instagram.com/nola.bistro/">Instagram</a>
+            <a href="https://www.facebook.com/profile.php?id=61556210137478">Facebook</a>
+        </div>
+    </footer>
+    <script>
+        document.addEventListener('DOMContentLoaded', () => {
+          const menuToggle = document.querySelector('.menu-toggle');
+          const mobileNav = document.querySelector('.mobile-nav');
+      
+          menuToggle.addEventListener('click', () => {
+            mobileNav.classList.toggle('active');
+          });
+        });
+      </script>
+</body>
+</html>
