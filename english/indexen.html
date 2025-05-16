@@ -1,0 +1,125 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOLA BBS</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logo square.svg">
+</head>
+<body>
+<!-- Desktop Header -->
+<header class="header">
+    <a href="indexen.html" class="logo-link">
+      <img src="../images/svg logo text.svg" alt="Logo" class="logo">
+    </a>
+    <nav class="nav">
+      <a href="abouten.html">About Us</a>
+      <a href="drinks.html">Drink Menu</a>
+      <a href="seasonalmenuen.html">Seasonal Menu</a>
+      <a href="weekly menu.html">Weekly Menu</a>
+      <a href="kontakten.html">Contact</a>
+    </nav>
+      <div class="language-switcher">
+        <a href="../index.html">CZ</a> | <a href="english/indexen.html">EN</a>
+      </div>
+</header>
+<!-- Mobile Header -->
+<header class="mobile-header">
+  <a href="indexen.html" class="logo-link">
+    <img src="../images/logo square.svg" alt="Logo" class="logo">
+  </a>
+  <label for="menu-toggle" class="menu-toggle">&#9776;</label>
+  <input type="checkbox" id="menu-toggle" class="menu-checkbox">
+  <nav class="mobile-nav">
+    <ul class="mobile-menu">
+      <li><a href="abouten.html">About Us</a></li>
+      <li><a href="drinks.html">Drink Menu</a></li>
+      <li><a href="seasonalmenuen.html">Seasonal Menu</a></li>
+      <li><a href="weekly menu.html">Weekly Menu</a></li>
+      <li><a href="kontakten.html">Contact</a></li>
+      <li><a href="../index.html">Czech</a></li>
+    </ul>
+  </nav>
+</header>
+
+<!-- Hero Section -->
+<section class="hero">
+    <div class="hero-overlay"></div>
+    <div class="hero-content">
+        <h1>Welcome!</h1>
+        <p>A cozy restaurant offering dishes from Czech and international cuisine. A great selection of wines and unique mixed drinks.</p>
+        <a href="weekly menu.html" class="btn">Weekly Menu</a>
+    </div>
+</section>
+
+<!-- About Section -->
+<section class="about-section">
+    <h2>ABOUT US</h2>
+    <div class="about-container">
+        <!-- Image Box -->
+        <div class="about-box">
+            <img src="../images/drincik.jpg" alt="Food">
+        </div>
+        <!-- Text Box -->
+        <div class="about-box about-text">
+            <p>In our bistro, we combine fresh ingredients with honest homemade cuisine. Every day, we cook with love, bake homemade desserts, and offer a selection of refreshing drinks — all with an emphasis on quality and taste.</p>
+            <a href="abouten.html" class="btn">Read More</a>
+        </div>
+        <!-- Image Box -->
+        <div class="about-box">
+            <img src="../images/sampano a mufiny.jpg" alt="Food">
+        </div>
+    </div>
+</section>
+
+<!-- Contact Section -->
+<section class="contactmain-section">
+    <h2>CONTACT US</h2>
+    <p>Planning a celebration, corporate event, or wedding? We offer professional catering services and the possibility of hosting events in our bistro. Do you have questions or want to reserve a table? Contact us!</p>
+    <a href="kontakten.html" class="btn">Contact Us</a>
+</section>
+
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-column">
+        <img src="../images/logo w text_.png" alt="Logo">
+        <p>
+            <span>&#x1F4CD; Velehradská 1911/4, 130 00 Vinohrady</span><br>
+            <span>&#x260E; +420 773 127 383</span><br>
+            <span>&#128712; Operator: NOLA BBS s.r.o<br>
+            Company ID: 21267448<br>
+            Responsible person: Stanislav Nováček</span>
+        </p>
+    </div>
+    <div class="footer-column">
+        <h3>Pages</h3>
+        <a href="indexen.html">Home</a>
+        <a href="drinks.html">Drink Menu</a>
+        <a href="seasonalmenuen.html">Seasonal Menu</a>
+        <a href="weekly menu.html">Weekly Menu</a>
+        <a href="kontakten.html">Contact</a>
+    </div>
+    <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <p>Monday: Closed</p>
+        <p>Tuesday - Sunday: 12:00 PM - 11:00 PM</p>
+    </div>
+    <div class="footer-column">
+        <h3>Social Media</h3>
+        <a href="https://www.instagram.com/nola.bistro/">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61556210137478">Facebook</a>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+  
+      menuToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+      });
+    });
+</script>
+</body>
+</html>

@@ -1,0 +1,126 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOLA BBS | Contact</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logo square.svg">
+</head>
+<body>
+<!-- Desktop Header -->
+<header class="header">
+  <a href="indexen.html" class="logo-link">
+    <img src="../images/svg logo text.svg" alt="Logo" class="logo">
+  </a>
+  <nav class="nav">
+    <a href="abouten.html">About Us</a>
+    <a href="drinks.html">Drink Menu</a>
+    <a href="seasonalmenuen.html">Seasonal Menu</a>
+    <a href="weekly menu.html">Weekly Menu</a>
+    <a href="kontakten.html">Contact</a>
+  </nav>
+    <div class="language-switcher">
+      <a href="../index.html">CZ</a> | <a href="indexen.html">EN</a>
+    </div>
+</header>
+<!-- Mobile Header -->
+<header class="mobile-header">
+<a href="indexen.html" class="logo-link">
+  <img src="../images/logo square.svg" alt="Logo" class="logo">
+</a>
+<label for="menu-toggle" class="menu-toggle">&#9776;</label>
+<input type="checkbox" id="menu-toggle" class="menu-checkbox">
+<nav class="mobile-nav">
+  <ul class="mobile-menu">
+    <li><a href="abouten.html">About Us</a></li>
+    <li><a href="drinks.html">Drink Menu</a></li>
+    <li><a href="seasonalmenuen.html">Seasonal Menu</a></li>
+    <li><a href="weekly menu.html">Weekly Menu</a></li>
+    <li><a href="kontakten.html">Contact</a></li>
+    <li><a href="../index.html">Czech</a></li>
+  </ul>
+</nav>
+</header>
+<!-- Hero Section -->
+<div class="contact-section">
+    <div class="contact-hero">
+      <div class="hero-overlay"></div>
+      <h1>Contact</h1>
+    </div>
+  
+    <div class="contact-content">
+      <div class="contact-left">
+        <p class="contact-subtitle">Contact</p>
+        <h2 class="contact-title">Get in Touch</h2>
+        <p class="contact-description">
+          Do you have a question, request, or feedback? Write to us — we’ll get back to you as soon as possible and do everything to ensure your satisfaction.
+        </p>
+        <ul class="contact-info">
+          <li>Mon: Closed | Tue-Sun: 12:00 PM - 11:00 PM</li><br>
+          <li>Velehradská 1911/4, 130 00 Vinohrady</li><br>
+          <li>+420 773 127 383</li>
+        </ul>
+      </div>
+  
+      <div class="contact-right">
+      <form class="contact-form" action="https://formsubmit.co/22a17bc076fb7594210f2e0bb196a574" method="POST">
+          <input type="hidden" name="_next" value="thankyou.html">
+          <textarea placeholder="Message" class="contact-input contact-textarea" name="message" required></textarea>
+          <input type="text" placeholder="Name" class="contact-input" name="name" required />
+          <input type="text" placeholder="Last Name" class="contact-input" name="last_name" required />
+          <input type="email" placeholder="Email" class="contact-input" name="email" required />
+          <input type="tel" placeholder="Phone Number" class="contact-input" name="phone" pattern="[0-9+\s\-]{7,}" />
+          <button type="submit" class="contact-submit">Send</button>
+      </form>
+      </div>
+    </div>
+</div>
+<!-- Map Section -->
+<section class="map-section">
+  <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2560.421981177484!2d14.4542539!3d50.07838579999999!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x470b950071079b2f%3A0x44c1b24bb9d4efef!2sNoLa%20BBS!5e0!3m2!1sen!2sus!4v1746561039755!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+</section>
+    
+<!-- Footer Section -->
+<footer class="footer">
+    <div class="footer-column">
+        <img src="../images/logo w text_.png" alt="Logo">
+        <p>
+            <span>&#x1F4CD; Velehradská 1911/4, 130 00 Vinohrady</span><br>
+            <span>&#x260E; +420 773 127 383</span><br>
+            <span>&#128712; Operator: NOLA BBS s.r.o<br>
+            Company ID: 21267448<br>
+            Responsible person: Stanislav Nováček</span>
+        </p>
+    </div>
+    <div class="footer-column">
+        <h3>Pages</h3>
+        <a href="indexen.html">Home</a>
+        <a href="drinks.html">Drink Menu</a>
+        <a href="seasonalmenuen.html">Seasonal Menu</a>
+        <a href="weekly menu.html">Weekly Menu</a>
+        <a href="kontakten.html">Contact</a>
+    </div>
+    <div class="footer-column">
+        <h3>Opening Hours</h3>
+        <p>Monday: Closed</p>
+        <p>Tuesday - Sunday: 12:00 PM - 11:00 PM</p>
+    </div>
+    <div class="footer-column">
+        <h3>Social Media</h3>
+        <a href="https://www.instagram.com/nola.bistro/">Instagram</a>
+        <a href="https://www.facebook.com/profile.php?id=61556210137478">Facebook</a>
+    </div>
+</footer>
+<script>
+    document.addEventListener('DOMContentLoaded', () => {
+      const menuToggle = document.querySelector('.menu-toggle');
+      const mobileNav = document.querySelector('.mobile-nav');
+  
+      menuToggle.addEventListener('click', () => {
+        mobileNav.classList.toggle('active');
+      });
+    });
+</script>
+</body>
+</html>
