@@ -212,7 +212,7 @@ p {
 }
 
 /* Hide Desktop Header on Mobile, Show Mobile Header */
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1245px) {
   .header {
     display: none;
   }
@@ -222,7 +222,7 @@ p {
 }
 
 /* Hide Mobile Header on Desktop */
-@media screen and (min-width: 1081px) {
+@media screen and (min-width: 1246px) {
   .mobile-header {
     display: none;
   }
@@ -753,7 +753,7 @@ p.menu-list__item-desc + span.dots {
 }
 
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1245px) {
   /* About Section */
   .about-container {
     display: flex;
@@ -819,7 +819,7 @@ p.menu-list__item-desc + span.dots {
 
 }
 
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1245px) {
 
   .about-box {
     flex: 1 1 100%; /* Make each box take full width on smaller screens */
@@ -961,7 +961,7 @@ p.menu-list__item-desc + span.dots {
   margin-bottom: auto;
 }
   
-@media screen and (max-width: 1080px) {
+@media screen and (max-width: 1245px) {
   /* Adjust the hero section for mobile */  
   .section {
     flex-direction: column; /* Stack sections vertically */
