@@ -959,6 +959,14 @@ p.menu-list__item-desc + span.dots {
   margin-top: auto;
   margin-bottom: auto;
 }
+.menu-subtitle {
+  font-style: italic;
+  color: #ccc;
+  margin-bottom: 10px;
+  text-align: center;
+  padding-top: 50px;
+  font-size: 1rem;
+}
   
 @media screen and (max-width: 1245px) {
   /* Adjust the hero section for mobile */  
