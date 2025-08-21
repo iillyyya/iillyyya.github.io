@@ -1,0 +1,148 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>NOLA BBS | Weekly Menu</title>
+    <link rel="stylesheet" href="../main.css">
+    <link rel="icon" type="image/svg+xml" href="../images/logo square.svg">
+</head>
+<body>  
+<!-- Desktop Header -->
+<header class="header">
+  <a href="indexen.html" class="logo-link">
+    <img src="../images/svg logo text.svg" alt="Logo" class="logo">
+  </a>
+  <nav class="nav">
+    <a href="abouten.html">About Us</a>
+    <a href="drinks.html">Drink Menu</a>
+    <a href="seasonalmenuen.html">Seasonal Menu</a>
+    <a href="weekly menu.html">Weekly Menu</a>
+    <a href="kontakten.html">Contact</a>
+  </nav>
+    <div class="language-switcher">
+      <a href="../index.html">CZ</a> | <a href="indexen.html">EN</a>
+    </div>
+</header>
+<!-- Mobile Header -->
+<header class="mobile-header">
+<a href="indexen.html" class="logo-link">
+  <img src="../images/logo square.svg" alt="Logo" class="logo">
+</a>
+<label for="menu-toggle" class="menu-toggle">&#9776;</label>
+<input type="checkbox" id="menu-toggle" class="menu-checkbox">
+<nav class="mobile-nav">
+  <ul class="mobile-menu">
+    <li><a href="abouten.html">About Us</a></li>
+    <li><a href="drinks.html">Drink Menu</a></li>
+    <li><a href="seasonalmenuen.html">Seasonal Menu</a></li>
+    <li><a href="weekly menu.html">Weekly Menu</a></li>
+    <li><a href="kontakten.html">Contact</a></li>
+    <li><a href="../index.html">Czech</a></li>
+  </ul>
+</nav>
+</header>
+<section class="menu-section">
+  <section class="centered-menu-section">
+    <div class="menu-list menu-list__dotted menu-list-2">
+      <h2 class="menu-list__title">MAINS</h2>
+      <hr class="separator">
+      <ul class="menu-list__items">
+        <li class="menu-list__item">
+          <h4 class="menu-list__item-title">
+            <span class="item_title">Bun cha burger</span>
+            <span class="dots"></span>
+          </h4>
+          <p class="menu-list__item-desc">
+            minced pork bun cha, sriracha mayo, pickled vegetables, lettuce
+          </p>
+          <span class="menu-list__item-price">275,-</span>
+        </li>
+        <li class="menu-list__item">
+          <h4 class="menu-list__item-title">
+            <span class="item_title">Kim Chi burger</span>
+            <span class="dots"></span>
+          </h4>
+          <p class="menu-list__item-desc">
+            minced beef, kim chi, fried egg, fried onion, kimchi mayo
+          </p>
+          <span class="menu-list__item-price">275,-</span>
+        </li>
+        <li class="menu-list__item">
+          <h4 class="menu-list__item-title">
+            <span class="item_title">Caesar burger</span>
+            <span class="dots"></span>
+          </h4>
+          <p class="menu-list__item-desc">
+            sous vide chicken thigh, caesar mayo, romaine lettuce, parmesan
+          </p>
+          <span class="menu-list__item-price">265,-</span>
+        </li>
+        <li class="menu-list__item">
+          <h4 class="menu-list__item-title">
+            <span class="item_title">Bacon cheese burger</span>
+            <span class="dots"></span>
+          </h4>
+          <p class="menu-list__item-desc">
+            minced beef, bacon, cheddar, lettuce, tomato, mustard mayo
+          </p>
+          <span class="menu-list__item-price">265,-</span>
+        </li>
+        <li class="menu-list__item">
+          <h4 class="menu-list__item-title">
+            <span class="item_title">Falafel burger</span>
+            <span class="dots"></span>
+          </h4>
+          <p class="menu-list__item-desc">
+            falafel patty, tahini sauce, pickled vegetables, lettuce
+          </p>
+          <span class="menu-list__item-price">245,-</span>
+        </li>
+      </ul>
+    </div>
+  </section>
+
+</section>
+<!-- Footer Section -->
+<footer class="footer">
+  <div class="footer-column">
+      <img src="../images/logo w text_.png" alt="Logo">
+      <p>
+          <span>&#x1F4CD; Velehradská 1911/4, 130 00 Vinohrady</span><br>
+          <span>&#x260E; +420 773 127 383</span><br>
+          <span>&#128712; Operator: NOLA BBS s.r.o<br>
+          Company ID: 21267448<br>
+          Responsible person: Stanislav Nováček</span>
+      </p>
+  </div>
+  <div class="footer-column">
+      <h3>Pages</h3>
+      <a href="indexen.html">Home</a>
+      <a href="drinks.html">Drink Menu</a>
+      <a href="seasonalmenuen.html">Seasonal Menu</a>
+      <a href="weekly menu.html">Weekly Menu</a>
+      <a href="kontakten.html">Contact</a>
+  </div>
+  <div class="footer-column">
+      <h3>Opening Hours</h3>
+      <p>Monday: Closed</p>
+      <p>Tuesday - Sunday: 14:00 - 23:00</p>
+  </div>
+  <div class="footer-column">
+      <h3>Social Media</h3>
+      <a href="https://www.instagram.com/nola.bistro/">Instagram</a>
+      <a href="https://www.facebook.com/profile.php?id=61556210137478">Facebook</a>
+  </div>
+</footer>
+<script>
+  document.addEventListener('DOMContentLoaded', () => {
+    const menuToggle = document.querySelector('.menu-toggle');
+    const mobileNav = document.querySelector('.mobile-nav');
+
+    menuToggle.addEventListener('click', () => {
+      mobileNav.classList.toggle('active');
+    });
+  });
+</script>
+</body>
+</html>
